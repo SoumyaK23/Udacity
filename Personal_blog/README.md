@@ -1,6 +1,6 @@
 # Front End Nanodegree Program
 
-Click to view page: https://soumyak23.github.io/Udacity/
+Click to view page: https://soumyak23.github.io
 
 Front End Nanodegree Project Resources for Personal blog:
 https://review.udacity.com/#!/rubrics/2667/view
