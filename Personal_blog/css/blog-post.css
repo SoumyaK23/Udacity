@@ -1,0 +1,348 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style the blog posts page : blogpost.html */
+
+.blog-body {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, [col] auto);
+	grid-template-rows: repeat(2, [row] auto);
+	background-image: url("../images/star-bg.svg");
+	margin: 2rem;
+}
+
+
+/* Style for the header */
+
+.header {
+	grid-column: col 1/ span 4;
+	grid-row: row 1;
+	padding: 35px;
+	color: #222;
+	background-image: url(./../images/header-a.jpg);
+	width: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: center;
+}
+
+#title {
+	grid-column: center-start / center-end;
+	grid-row: 2 / -1;
+	display: inline-block;
+	padding: 1rem 2rem;
+	color: rgba(43, 43, 9, 0.164);
+}
+
+#title-text {
+	color: #000522;
+	font-size: 3rem;
+	font-weight: 400;
+	margin-top: 12rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* Responsive layout for Medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	#title-text {
+		margin: 25px;
+		font-size: 2.5rem;
+		font-weight: 150;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.header {
+		padding: 10px;
+		width: 100%;
+	}
+	#title-text {
+		margin: 10px;
+		font-size: 2rem;
+		font-weight: 100;
+	}
+}
+
+
+/* Style the navigation bar links */
+
+.navigation a {
+	color: rgb(111, 118, 228);
+	padding: 5px 5px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 200;
+	font-size: x-large;
+}
+
+
+/* Change color on hover */
+
+.navigation a:hover {
+	color: rgb(243, 205, 54);
+}
+
+
+/* Responsive layout for Medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.navigation a {
+		font-weight: 150;
+		font-size: large;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.navigation a {
+		font-weight: 100;
+		font-size: medium;
+	}
+}
+
+
+/* Style the sidebar */
+
+.sidebar {
+	grid-column: col 1;
+	grid-row: row 3;
+	border-radius: 5px;
+	flex: 30%;
+	padding: 20px;
+	color: #000522;
+	;
+}
+
+.sidebar-card {
+	height: auto;
+	width: 100%;
+	padding: 10px;
+	justify-content: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-card h1 {
+	color: #661;
+	text-align: center;
+	font-size: 24px;
+}
+
+.sidebar-card p {
+	font-size: 14px;
+	color: gray;
+}
+
+.sidebar-card img {
+	padding: 10px;
+	height: 50px;
+	width: 50px;
+}
+
+#profile-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 100%
+}
+
+figcaption {
+	text-align: center;
+	font-size: 20px;
+	color: rgb(46, 44, 44);
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+
+/* Style the top navigation bar */
+
+.navigation {
+	grid-column: col 1/ span 4;
+	grid-row: row 2;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+
+/* Style the blog posts */
+
+.blog-post {
+	grid-column: col 2;
+	grid-row: row 3;
+	flex: 70%;
+	padding: 20px;
+}
+
+h1 {
+	color: #010c47;
+	font: 24px;
+}
+
+h2 {
+	color: rebeccapurple;
+	font: 24px;
+}
+
+h3 {
+	color: darkslateblue;
+	font: 24px;
+}
+
+.blog-post-date {
+	color: #999;
+}
+
+.blog-post p {
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+}
+
+​ button {
+	background-color: #661;
+	border: none;
+	color: #c4c4c4;
+	padding: 15px 25px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.blog-post-title {
+		font-size: 20px;
+	}
+	.blog-post p {
+		font-size: 16px;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.blog-body {
+		margin: 0rem;
+	}
+	.navigation {
+		flex-direction: column;
+	}
+	.blog-post {
+		grid-column: col 1/ span 4;
+		display: flex;
+		flex: 100%;
+		flex-direction: column;
+		margin: none;
+		padding: none;
+	}
+	.blog-post-title {
+		font-size: 16px;
+	}
+	.blog-post p {
+		font-size: 14px;
+	}
+	h1 {
+		font: 16px;
+	}
+	h2 {
+		font: 14px;
+	}
+	h3 {
+		font: 12px;
+	}
+	.sidebar {
+		grid-column: col 1/ span 4;
+		grid-row: row 4;
+		flex-direction: column;
+		display: flex;
+		flex: 100%;
+		padding: 1px;
+		text-align: center;
+	}
+	.sidebar-card h1 {
+		font-size: 12px;
+	}
+	.sidebar-card p {
+		font-size: 12px;
+	}
+	.sidebar-card img {
+		padding: 5px;
+		height: 25px;
+		width: 25px;
+	}
+	.sidebar-card li {
+		font-size: 12px;
+	}
+	#avatar-title {
+		font-size: 12px;
+	}
+	#profile-pic {
+		display: block;
+		padding: 5px;
+		height: 30px;
+		width: 30px;
+	}
+}
+
+
+/* Style for the footer */
+
+footer {
+	grid-column: col 1/ span 4;
+	grid-row: row 6;
+	display: flex;
+	border-top: 1px solid #c4c4c4;
+	padding: 5px 5px;
+}
+
+.footer-copyright {
+	color: #661;
+	font-size: large;
+	justify-content: center;
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.footer-copyright {
+		font-size: medium;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.footer-copyright {
+		font-size: small;
+	}
+}

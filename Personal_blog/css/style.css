@@ -1,0 +1,51 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style the overall page:index.html */
+
+@import url("heading.css");
+@import url("navigation.css");
+@import url("card.css");
+@import url("containers.css");
+@import url("avatar.css");
+@import url("footer.css");
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+body {
+	background-image: url("../images/star-bg.svg");
+	background-color: rgb(2, 2, 20);
+	color: wheat;
+	font-family: sans-serif;
+	font-weight: 200;
+	margin: 10px;
+	padding: 2rem;
+}
+
+#wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, [col] auto);
+	grid-template-rows: repeat(2, [row] auto);
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	body {
+		margin: 10px;
+		font-weight: 100;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin:5px;
+		font-weight: 100;
+	}
+}

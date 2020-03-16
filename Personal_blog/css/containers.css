@@ -1,0 +1,62 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Styles for the flex containers used in index.html*/
+
+#flex-container-weekend {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#flex-container-offbeatenpath {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#flex-container-adventure {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#flex-container-avatar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	#flex-container-weekend {
+		flex-direction: column;
+	}
+	#flex-container-offbeatenpath {
+		flex-direction: column;
+	}
+	#flex-container-adventure {
+		flex-direction: column;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	#flex-container-weekend {
+		flex-direction: column;
+	}
+	#flex-container-offbeatenpath {
+		flex-direction: column;
+	}
+	#flex-container-adventure {
+		flex-direction: column;
+	}
+	#flex-container-avatar {
+		flex-direction: column;
+	}
+}

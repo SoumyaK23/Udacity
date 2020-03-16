@@ -1,0 +1,56 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style the top navigation bar */
+
+.navigation {
+	grid-column: col 1/ span 4;
+	grid-row: row 2;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+
+
+/* Style the navigation bar links */
+
+.navigation a {
+	color: rgb(111, 118, 228);
+	padding: 10px 10px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 200;
+	font-size: x-large;
+}
+
+
+/* Change color on hover */
+
+.navigation a:hover {
+	color: rgb(243, 205, 54);
+}
+
+
+/* Responsive layout for Medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.navigation a {
+		font-weight: 150;
+		font-size: large;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.navigation {
+		flex-direction: column;
+	}
+	.navigation a {
+		font-weight: 100;
+		font-size: medium;
+	}
+}

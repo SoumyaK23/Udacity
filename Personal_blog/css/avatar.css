@@ -1,0 +1,67 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+/* Style for the cards used in index.html for the avatar */
+
+.avatar-card {
+	transition: 0.3s;
+	margin: 2rem 1rem;
+}
+
+.avatar-title {
+	width: 90%;
+	padding: 5px;
+	justify-items: center;
+	text-align: center;
+	font-size: 25px;
+}
+
+.avatar-text {
+	font-size: 18px;
+	font-weight: 200;
+	justify-items: center;
+	font-style: oblique;
+}
+
+.avatar-container {
+	width: 90%;
+	padding: 10px;
+	justify-items: center;
+	text-align: center;
+}
+
+.avatar-img {
+	display: block;
+	padding: 5px;
+	justify-items: center;
+	object-fit: cover;
+}
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.avatar-title {
+		font-size: 12px;
+	}
+	.avatar img {
+		display: block;
+		padding: 5px;
+		height: 30px;
+		width: 30px;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.avatar-title {
+		font-size: 12px;
+	}
+	.avatar img {
+		display: block;
+		padding: 5px;
+		height: 30px;
+		width: 30px;
+	}
+}

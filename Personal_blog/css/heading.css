@@ -1,0 +1,55 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style for the header */
+
+.heading {
+	grid-column: col 1/ span 4;
+	grid-row: row 1;
+	color: #222;
+	background-image: url(./../images/header-a.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: center;
+}
+
+#title {
+	grid-column: center-start / center-end;
+	grid-row: 2 / -1;
+	display: inline-block;
+	padding: 1rem 2rem;
+	color: rgba(43, 43, 9, 0.164);
+}
+
+#title-text {
+	color: #000522;
+	font-size: 3rem;
+	font-weight: 400;
+	margin-top: 12rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* Responsive layout for Medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	#title-text {
+		margin-top: 15px;
+		font-size: 2.5rem;
+		font-weight: 150;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	#title-text {
+		font-size: 2rem;
+		font-weight: 100;
+	}
+}

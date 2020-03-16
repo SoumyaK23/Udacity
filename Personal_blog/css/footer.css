@@ -1,0 +1,54 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style for the footer */
+
+footer {
+	grid-column: col 1/ span 4;
+	grid-row: row 7;
+	display: flex;
+	border-top: 1px solid #c4c4c4;
+	padding: 5px 5px;
+}
+
+.footer-copyright {
+	color: #661;
+	font-size: large;
+	justify-content: center;
+}
+
+.footer-list {
+	color: #661;
+	font-size: large;
+	justify-content: center;
+}
+
+.footer-item {
+	color: #661;
+	font-size: large;
+	justify-content: left;
+}
+
+.footer-img {
+	height: 50px;
+	width: 50px;
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.footer-copyright {
+		font-size: medium;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.footer-copyright {
+		font-size: small;
+	}
+}

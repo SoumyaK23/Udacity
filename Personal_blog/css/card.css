@@ -1,0 +1,83 @@
+/* Copyright by Soumya Krishnamurthy. This is the  style sheet that is added as part of the first project for 
+Udacity nanodegree program. All parts of the code are original.  */
+
+
+/* Style for the cards used in index.html */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(231, 228, 13, 0.2);
+	transition: 0.3s;
+	margin: 2rem 1rem;
+	width: 85%;
+	justify-content: space-around;
+}
+
+figcaption{
+	width: 90%;
+	padding: 5px;
+	justify-items: center;
+	text-align: center;
+	font-size: 25px;
+}
+
+.card-text {
+	font-size: 18px;
+	font-weight: 200;
+	justify-items: center;
+}
+
+.card img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(228, 10, 10, 0.2);
+	cursor: pointer;
+	transform: scale(1.10);
+}
+
+.card-container {
+	width: 90%;
+	padding: 10px;
+	justify-items: center;
+	text-align: center;
+}
+
+.card-button {
+	background-color: #661;
+	color: #fae7d6;
+	border: none;
+	border-radius: 30px;
+	font-size: 16px;
+}
+
+.card-button:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	box-shadow: 0 1rem 2rem rgba(65, 10, 10, 0.2);
+}
+
+.card-button:active {
+	transform: scale(.98);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+
+/* Responsive layout for medium Screens: default is larger screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+	.card-button {
+		font-size: 14px;
+	}
+}
+
+
+/* Responsive layout for small Screens: default is larger screens */
+
+@media only screen and (max-width: 600px) {
+	.card-button {
+		font-size: 12px;
+	}
+}
