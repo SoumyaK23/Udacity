@@ -1,0 +1,89 @@
+<!-- Content has been taken from: https://uk.mathworks.com/discovery/machine-learning.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <div id="navbar">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </div>
+    
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing page:<br>Machine Learning</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Classification" class="active">
+      <div class="landing__container">
+        <h2> Classification techniques</h2>
+        <p>Classification techniques predict discrete responses—for example, whether an email is genuine or spam, 
+          or whether a tumor is cancerous or benign. Classification models classify input data into categories. 
+          Typical applications include medical imaging, speech recognition, and credit scoring. 
+          Use classification if your data can be tagged, categorized, or separated into specific groups or classes. 
+          For example, applications for hand-writing recognition use classification to recognize letters and numbers. 
+          In image processing and computer vision, unsupervised pattern recognition techniques are used for object detection 
+          and image segmentation.</p>
+
+        <p>Common algorithms for performing classification include support vector machine (SVM), boosted and bagged decision trees, 
+          k-nearest neighbor, Naïve Bayes, discriminant analysis, logistic regression, and neural networks.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Regression" class="active">
+      <div class="landing__container">
+        <h2>Regression techniques</h2>
+        <p>Regression techniques predict continuous responses—for example, changes in temperature or fluctuations in power demand. 
+          Typical applications include electricity load forecasting and algorithmic trading. \
+          Use regression techniques if you are working with a data range or if the nature of your response is a real number, 
+          such as temperature or the time until failure for a piece of equipment.</p>
+        
+        <p>Common regression algorithms include linear model, nonlinear model, regularization, stepwise regression, boosted and 
+          bagged decision trees, neural networks, and adaptive neuro-fuzzy learning.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Clustering" class="active">
+      <div class="landing__container">
+        <h2>Clustering</h2>
+        <p>Clustering is the most common unsupervised learning technique. It is used for exploratory data analysis 
+          to find hidden patterns or groupings in data. Applications for cluster analysis include gene sequence analysis, 
+          market research, and object recognition. For example, if a cell phone company wants optimize the locations 
+          where they build cell phone towers, they can use machine learning to estimate the number of clusters of people r
+          elying on their towers. A phone can only talk to one tower at a time, so the team uses clustering algorithms 
+          to design the best placement of cell towers to optimize signal reception for groups, or clusters, of their customers.</p>
+
+        <p> Common algorithms for performing clustering include k-means and k-medoids, hierarchical clustering, Gaussian mixture models, hidden Markov models, self-organizing maps, fuzzy c-means clustering, and subtractive clustering.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Guidelines" class="active">
+      <div class="landing__container">
+        <h2>Guidelines to choose</h2>
+        <p>Here are some guidelines on choosing between supervised and unsupervised machine learning:</p>
+
+        <p>Choose supervised learning if you need to train a model to make a prediction--for example, the future value of a continuous variable, such as temperature or a stock price, or a classification—for example, identify makes of cars from webcam video footage.</p>
+        <p>Choose unsupervised learning if you need to explore your data and want to train a model to find a good internal representation, such as splitting data up into clusters.</p>
+      </div>
+    </section>	
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
